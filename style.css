@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(assests/qrBg.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.qr,
+.in {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr .in h1,
+p {
+  font-family: var(--font);
+  margin-bottom: 5px;
+}
+
+.input {
+  height: 250px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(74, 74, 75, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(68, 66, 66, 0.18);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#qrInput{
+  border-radius: 7px;
+  height: 25px;
+  border: none;
+  width: 80%;
+  margin: 15px 0 6px;
+  padding: 9px;
+}
+
+.btn{
+  border-radius: 7px;
+  height: 45px;
+  border: none;
+   background-color: black;
+   color: white;
+  width: 85%;
+  margin: 10px 0 10px;
+  padding: 9px;
+  cursor: pointer;
+  font-size: medium;
+  transition: transform 0.3s;
+}
+
+.btn:hover, #close:hover{
+  background-color: rgb(40, 40, 40);
+  transform: scale(1.01);
+
+}
+
+.pop{
+  height: 600px;
+  width: 450px;
+  background-color: black;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 0 rgba(74, 74, 75, 0.37);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out,
+                opacity 0.5s,
+                bottom 0.5s ease-in-out;
+}
+
+#main.opacity {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pop.show {
+  transform: scale(1);
+  opacity: 1;
+  bottom: 15%;
+}
+
+#qrImg {
+  width: 70%;
+  border: 8px solid white;
+  border-radius: 5px;
+  margin: 20px 0 25px;
+}
+
+#dwn{
+  width: 70%;
+  background-color: white;
+  color: black;
+  font-size: medium;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0 10px;
+}
+
+#close{
+  width: 70%;
+  color: white;
+  background-color: black;
+  margin: 6px 0 15px;
+  border: 2px solid white;
+  font-size: medium;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#dwn:hover{
+  transform: scale(1.01);
+  background-color: rgb(223, 223, 223);
+}

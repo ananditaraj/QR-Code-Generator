@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assests/qr (2).png" />
+    <title>QR Code Geenrator</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="qr">
+        <img src="assests/qr (2).png" width="15%" margin="0 20px" />
+
+        <div class="text">
+          <h1>Generate QR Code</h1>
+          <p>In just one click!</p>
+        </div>
+      </div>
+
+      <div class="in">
+        <div class="input">
+                <h1>Enter Text or URL</h1>
+                <input type="text" id="qrInput" placeholder="Text or URL">
+                <button class="btn">Generate QR Code</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop" aria-live="polite">
+        <h2>QR Generated</h2>
+        <img src="" alt="Generated QR Code for [Input]" id="qrImg" />
+        <button id="dwn">Download QR</button>
+        <button id="close">Close</button>
+      </div>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
