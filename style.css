@@ -24,7 +24,9 @@ body {
   align-items: center;
   display: flex;
 }
-
+.text h1{
+  font-weight: bolder;
+}
 .qr,
 .in {
   display: flex;
@@ -39,6 +41,10 @@ p {
   margin-bottom: 95px;
 }
 
+#logo{
+  margin-top: -80px;
+  height: 20%;
+}
 .input {
   height: 250px;
   width: 50%;
