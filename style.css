@@ -64,7 +64,7 @@ p {
   padding: 9px;
 }
 
-.btn{
+#btn{
   border-radius: 7px;
   height: 50px;
   border: none;
@@ -78,13 +78,13 @@ p {
   transition: transform 0.3s;
 }
 
-.btn:hover, #close:hover{
+#btn:hover, #close:hover{
   background-color: rgb(40, 40, 40);
   transform: scale(1.01);
 
 }
 
-.pop{
+#pop{
   height: 600px;
   width: 450px;
   background-color: black;
@@ -107,7 +107,7 @@ p {
   pointer-events: none;
 }
 
-.pop.show {
+#pop.show {
   transform: scale(1);
   opacity: 1;
   bottom: 15%;
