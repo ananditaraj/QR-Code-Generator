@@ -18,7 +18,7 @@ body {
 #main {
   height: 100vh;
   width: 100%;
-  background-image: url(assests/qrBg.jpg);
+  background-image: url(assests/wave.jpg);
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@ body {
 .qr .in h1,
 p {
   font-family: var(--font);
-  margin-bottom: 5px;
+  margin-bottom: 95px;
 }
 
 .input {
