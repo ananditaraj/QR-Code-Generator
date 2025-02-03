@@ -24,9 +24,6 @@ body {
   align-items: center;
   display: flex;
 }
-.text h1{
-  font-weight: bolder;
-}
 .qr,
 .in {
   display: flex;
